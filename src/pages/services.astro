@@ -1,0 +1,192 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Nav from '../components/Nav.astro';
+import SiteFooter from '../components/SiteFooter.astro';
+---
+
+<BaseLayout
+	title="Services"
+	description="Active projects and consulting services from Ohana Consulting — AI governance, structured context, patient access, and care coordination."
+>
+	<Nav />
+
+	<div class="services-page">
+
+		<div style="margin-bottom: 3rem; padding-bottom: 3rem; border-bottom: 1px solid var(--color-border);">
+			<p class="section-label">Services & Projects</p>
+			<h1 style="font-size: clamp(1.75rem, 4vw, 2.75rem); font-weight: 700; letter-spacing: -0.025em; margin: 0 0 1rem;">
+				What we build and deliver
+			</h1>
+			<p style="font-size: 1.1rem; color: var(--color-text-muted); max-width: 62ch; line-height: 1.7; margin: 0;">
+				Ohana operates across two active technology projects and three service areas. The projects are
+				production-ready tools built on open standards. The services apply twenty years of healthcare
+				technology experience to the problems that matter most in regulated AI deployment.
+			</p>
+		</div>
+
+		<!-- Active Projects header -->
+		<div style="margin-bottom: 2rem;">
+			<p class="section-label">Active Projects</p>
+			<h2 style="font-size: clamp(1.2rem, 2vw, 1.5rem); font-weight: 700; letter-spacing: -0.015em; margin: 0;">
+				Open technology for AI governance
+			</h2>
+		</div>
+
+		<!-- SCS -->
+		<div class="service-area" id="scs">
+			<p class="section-label">Project 01</p>
+			<h2>Structured Context Specification</h2>
+			<p class="service-area-intro">
+				An open specification — Apache 2.0 — for structured, versioned AI context management.
+				SCS treats context as a first-class artifact: git-native, reviewable, and consistent across
+				sessions, agents, and team members. It closes the gap between governance frameworks written
+				for human readers and AI systems that operate on structured data and explicit constraints.
+			</p>
+			<p class="service-area-intro">
+				SCS includes a dedicated standards bundle type so that governance requirements travel directly
+				from the standards body to the AI agent, intact and machine-readable. Reference bundles exist
+				for CHAI T&amp;E, HIPAA, and NIST AI RMF.
+			</p>
+			<ul class="service-detail-list" style="margin-bottom: 1.75rem;">
+				<li>Open specification, Apache 2.0</li>
+				<li>Structured, versioned context bundles</li>
+				<li>Git-native — context lives alongside your code</li>
+				<li>Standards bundles for CHAI, HIPAA, NIST AI RMF</li>
+				<li>Plugins for Claude Code (scs-vibe, scs-team)</li>
+				<li>Reference implementation and community governance</li>
+			</ul>
+			<div style="display: flex; gap: 1rem; flex-wrap: wrap;">
+				<a href="https://structuredcontext.dev" target="_blank" rel="noopener" class="btn btn-primary">structuredcontext.dev</a>
+				<a href="https://github.com/tim-mccrimmon/structured-context-spec" target="_blank" rel="noopener" class="btn btn-secondary">GitHub &rarr;</a>
+			</div>
+		</div>
+
+		<!-- SCP -->
+		<div class="service-area" id="scp">
+			<p class="section-label">Project 02</p>
+			<h2>Supervisory Control Plane</h2>
+			<p class="service-area-intro">
+				AI governance for when the stakes aren't theoretical. SCP streams your governance context —
+				your policies, your compliance requirements, your operational boundaries — directly to your
+				AI agents at runtime. Agents operate inside your rules, not their training data.
+			</p>
+			<p class="service-area-intro">
+				When regulators ask what your AI knew at the time of a decision, SCP gives you the answer:
+				a full audit trail, every request, with agent identity, policies delivered, and context versioning.
+				Built for HIPAA, CHAI, NIST AI RMF, and EU AI Act compliance — which begins enforcement for
+				high-risk healthcare AI systems on August 2, 2026.
+			</p>
+			<ul class="service-detail-list" style="margin-bottom: 1.75rem;">
+				<li>Runtime governance context delivery to AI agents</li>
+				<li>Full audit trail — what agent, what context, what decision, when</li>
+				<li>Versioned, immutable governance bundles</li>
+				<li>Graph-based context selection — agents get relevant policy, not everything</li>
+				<li>Real-time streaming — update governance, agents adjust immediately</li>
+				<li>HIPAA, CHAI, NIST AI RMF, EU AI Act alignment</li>
+			</ul>
+			<div style="display: flex; gap: 1rem; flex-wrap: wrap;">
+				<a href="https://supervisoryplane.com" target="_blank" rel="noopener" class="btn btn-primary">supervisoryplane.com</a>
+				<a href="mailto:info@ohana-tech.com?subject=SCP%20Demo%20Request" class="btn btn-secondary">Request Demo &rarr;</a>
+			</div>
+		</div>
+
+		<!-- Services header -->
+		<div style="margin: 3rem 0 2rem; padding-top: 3rem; border-top: 2px solid var(--color-border);">
+			<p class="section-label">Consulting Services</p>
+			<h2 style="font-size: clamp(1.2rem, 2vw, 1.5rem); font-weight: 700; letter-spacing: -0.015em; margin: 0;">
+				Applied expertise in healthcare AI
+			</h2>
+		</div>
+
+		<!-- AI Governance -->
+		<div class="service-area" id="governance">
+			<p class="section-label">Service 01 · Powered by SCP</p>
+			<h2>AI Governance & Compliance</h2>
+			<p class="service-area-intro">
+				Governance in regulated industries isn't optional, and it can't be retrofitted. The frameworks
+				that matter — CHAI, HIPAA, NIST AI RMF, EU AI Act — require accountability mechanisms that
+				span the full development cycle through runtime. Ohana designs and implements governance
+				architectures grounded in the SCP platform and SCS methodology, tailored to the operational
+				and regulatory context of your organization.
+			</p>
+			<ul class="service-detail-list">
+				<li>AI governance framework design and implementation</li>
+				<li>CHAI T&amp;E Framework compliance</li>
+				<li>NIST AI RMF alignment</li>
+				<li>EU AI Act readiness (enforcement: August 2, 2026)</li>
+				<li>HIPAA AI audit controls (§164.312(b))</li>
+				<li>Development lifecycle governance (shift-left)</li>
+				<li>Runtime monitoring and audit architecture</li>
+				<li>Bias and fairness evaluation</li>
+				<li>Standards body engagement and structured context publishing</li>
+			</ul>
+		</div>
+
+		<!-- Patient Access -->
+		<div class="service-area" id="patient-access">
+			<p class="section-label">Service 02</p>
+			<h2>Patient Access to Care</h2>
+			<p class="service-area-intro">
+				The point of entry for most patients is still friction-heavy, opaque, and slow. AI can reduce
+				that friction — but only when it's designed with the payer-provider relationship, prior
+				authorization rules, and clinical triage logic built in from the start, not bolted on after launch.
+			</p>
+			<ul class="service-detail-list">
+				<li>Prior authorization guidance and automation</li>
+				<li>Appointment scheduling optimization</li>
+				<li>AI-driven triage and care routing</li>
+				<li>Eligibility and benefits verification</li>
+				<li>Denial management support</li>
+			</ul>
+		</div>
+
+		<!-- Care Coordination -->
+		<div class="service-area" id="care-coordination">
+			<p class="section-label">Service 03</p>
+			<h2>Patient Engagement & Care Coordination</h2>
+			<p class="service-area-intro">
+				Most patient engagement tools focus on reminders and portals. The harder problem is the space
+				between visits — where patients have questions they don't know how to ask, conditions they
+				don't know how to manage, and resources they don't know exist.
+			</p>
+			<p class="service-area-intro">
+				Ohana designed and built <strong>Jasmine</strong>, a personal AI health coach that uses the
+				patient's own health record — accessed via 21st Century Cures data rights — as the foundation
+				for a continuous, personalized health relationship. Jasmine helps patients find answers,
+				navigate care options, and connect to the right resources: smoking cessation, weight management,
+				active living, dietitians, psychologists, community services, and more. It acts as a
+				confidant and guide, not a portal.
+			</p>
+			<p class="service-area-intro">
+				Jasmine is now in market as <strong>CairCompanion</strong>, the patient-facing agent within
+				the <a href="https://pulpdigital.ai" target="_blank" rel="noopener">CairIQ platform</a>
+				developed by Pulp Digital and Cetus Digital.
+			</p>
+			<ul class="service-detail-list">
+				<li>Personal AI health coaching and care navigation</li>
+				<li>Whole-person health — behavioral, lifestyle, and clinical</li>
+				<li>21st Century Cures data access (FHIR/SMART on FHIR)</li>
+				<li>Community resource and specialist referral</li>
+				<li>Chronic condition monitoring and adherence</li>
+				<li>Care plan design and AI-assisted management</li>
+				<li>Multi-provider care team coordination</li>
+				<li>Transitions of care support</li>
+				<li>NCPDP SCRIPT and pharmacy benefit integration</li>
+			</ul>
+		</div>
+
+	</div>
+
+	<!-- CTA banner -->
+	<div class="cta-banner">
+		<div class="cta-banner-inner">
+			<div>
+				<h2>Have a specific use case in mind?</h2>
+				<p>Most engagements start with a focused conversation. No commitment required to explore whether there's a fit.</p>
+			</div>
+			<a href="/contact" class="btn btn-primary">Get in Touch</a>
+		</div>
+	</div>
+
+	<SiteFooter />
+</BaseLayout>

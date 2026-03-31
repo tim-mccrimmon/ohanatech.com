@@ -1,0 +1,158 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Nav from '../components/Nav.astro';
+import SiteFooter from '../components/SiteFooter.astro';
+---
+
+<BaseLayout
+	title="About"
+	description="Tim McCrimmon — healthcare technology executive, open standards architect, and founder of Ohana Consulting LLC."
+>
+	<Nav />
+
+	<div class="about-page">
+		<div class="about-prose">
+			<p class="section-label">About</p>
+			<h1>Tim McCrimmon</h1>
+			<p class="subtitle">Founder, Ohana Consulting LLC</p>
+
+			<p>
+				The AI opportunity in healthcare isn't surprising to me. Neither are the reasons it tends to fail.
+				I've spent twenty years at the intersection of clinical workflow, data exchange standards, and
+				enterprise software — inside the organizations that built the systems AI now needs to work with.
+			</p>
+
+			<p>
+				What is new — and genuinely hard — is the governance problem. AI systems in regulated environments
+				require accountability mechanisms that don't exist yet in most organizations. The standards bodies
+				write frameworks for human reviewers. The AI systems operate on structured data. Bridging that gap
+				is the work.
+			</p>
+
+			<h2>Optum / UnitedHealth Group</h2>
+			<p>
+				Eight years as a technology executive for advanced clinical solutions. The most significant work
+				here was <strong>Calypso</strong> — an internal platform I designed and built for multi-EHR
+				integration using FHIR and SMART on FHIR. One application, any EHR. Calypso gave clinical and
+				administrative applications access to patient data across health systems without proprietary
+				integration contracts for each.
+			</p>
+			<p>
+				Beyond Calypso: I led Optum's technical engagement on <strong>21st Century Cures</strong>
+				compliance, contributed to AI-driven clinical decision support offerings, and served as the
+				lead technology executive for prior authorization guidance initiatives.
+				The through-line across all of it was the same — open standards as the foundation, governance
+				as the enabler, and clinical workflow as the constraint that everything else has to fit inside.
+			</p>
+
+			<h2>Red Hat</h2>
+			<p>
+				Architect and designer for embedded systems, OpenStack, and OpenShift (Docker/Kubernetes).
+				This is where the cloud-native infrastructure expertise lives — the same stack that now runs
+				AI workloads in production. Understanding distributed systems, container orchestration, and
+				the operational requirements of software running at scale is not optional background knowledge
+				for AI deployment; it's the foundation.
+			</p>
+
+			<h2>IBM</h2>
+			<p>
+				Software Development Product Manager across IBM's full software portfolio. The defining project
+				of this period: I conceived and drove the decision to <strong>open source Eclipse</strong>,
+				one of the most consequential bets in enterprise open source history. It shaped how I think
+				about open standards — not as compliance obligations but as strategic instruments for building
+				ecosystems that outlast any single vendor.
+			</p>
+			<p>
+				That lens — understanding how open standards actually function in commercial ecosystems,
+				where the value gets created, and how to participate constructively — is directly applicable
+				to the interoperability standards that healthcare runs on.
+			</p>
+
+			<h2>Lenovo</h2>
+			<p>
+				Product Manager for ThinkPad Accessories, including secure external storage, adapter cables,
+				and USB-C implementations. The value here is less the domain and more the discipline:
+				hardware-software integration at the product level, security requirements at the silicon level,
+				and the full product lifecycle from specification to manufacturing to market.
+			</p>
+
+			<h2>Education</h2>
+			<p>
+				<strong>B.S., Electrical Engineering</strong> — Rutgers University<br />
+				<strong>M.S. Certificate, Healthcare Informatics</strong> — Boston University
+			</p>
+			<p>
+				The combination is deliberate. Engineering gives me the technical foundation to evaluate
+				what's actually possible. Healthcare informatics gives me the clinical and regulatory context
+				to understand what's actually required. Most AI projects in healthcare suffer from too much
+				of one and not enough of the other.
+			</p>
+		</div>
+
+		<aside class="about-sidebar">
+			<div class="sidebar-card">
+				<h3>Career</h3>
+				<ul class="credential-list">
+					<li>
+						<strong>Optum / UnitedHealth Group</strong>
+						Technology Executive, Advanced Clinical Solutions · 8 years
+					</li>
+					<li>
+						<strong>Red Hat</strong>
+						Architect, Embedded Systems, OpenStack, OpenShift
+					</li>
+					<li>
+						<strong>IBM</strong>
+						Software Development Product Manager (full portfolio)
+					</li>
+					<li>
+						<strong>Lenovo</strong>
+						Product Manager, ThinkPad Accessories
+					</li>
+				</ul>
+			</div>
+
+			<div class="sidebar-card" style="margin-top: 1.25rem;">
+				<h3>Education</h3>
+				<ul class="credential-list">
+					<li>
+						<strong>Rutgers University</strong>
+						B.S. Electrical Engineering
+					</li>
+					<li>
+						<strong>Boston University</strong>
+						M.S. Certificate, Healthcare Informatics
+					</li>
+				</ul>
+			</div>
+
+			<div class="sidebar-card" style="margin-top: 1.25rem;">
+				<h3>Selected Work</h3>
+				<ul class="credential-list">
+					<li>
+						<strong>Calypso</strong>
+						Multi-EHR FHIR/SMART integration platform, Optum
+					</li>
+					<li>
+						<strong>Eclipse</strong>
+						Conceived and drove open sourcing of the Eclipse IDE, IBM
+					</li>
+					<li>
+						<strong>21st Century Cures</strong>
+						Lead technology executive, Optum/UHG compliance engagement
+					</li>
+					<li>
+						<strong>Structured Context Specification</strong>
+						Open specification for AI governance context management
+					</li>
+				</ul>
+			</div>
+
+			<div style="margin-top: 1.5rem;">
+				<a href="/contact" class="btn btn-primary" style="width: 100%; text-align: center; display: block;">Get in Touch</a>
+			</div>
+		</aside>
+	</div>
+
+	<SiteFooter />
+</BaseLayout>
